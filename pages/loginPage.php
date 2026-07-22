@@ -5,24 +5,24 @@ echo '
 <main class="main">
 
 <form class="border-1 flex flex-col w-75 p-5 gap-1 m-5" action="loginPage.php" method="POST">
-    <h3 class="text-2xl border-b-1 italic">Logga in</h3>
+    <h3 class="text-2xl border-b-1 italic">Log in</h3>
 
-    <label for="username">Användarnamn:</label>
+    <label for="username">Username:</label>
     <input class="bg-white border-1" type="text" name="username" id="username" required>
     <br>
 
-    <label for="psw">Lösenord:</label>
+    <label for="psw">Password:</label>
     <input class="bg-white border-1" type="password" name="pwd" id="pwd" required>
     <br>
 
-    <input class="border-1 bg-gray-300" type="submit" value="Logga in">
+    <input class="border-1 bg-gray-300" type="submit" value="Sign in">
 </form>
 ';
 }
 else{
         echo '<main class="main">';
-        echo '<p>Inloggad som ' . $_SESSION["username"] . '</p>';
-        echo '<a class="text-blue-800 hover:underline cursor:pointer" href="../index.php">Gå hem</a>';
+        echo '<p>Logged in as ' . $_SESSION["username"] . '</p>';
+        echo '<a class="text-blue-800 hover:underline cursor:pointer" href="../index.php">Go home</a>';
         echo "</main>";
 }
 ?>
@@ -56,7 +56,7 @@ include "../scripts/db.php";
                     echo "</main>";
                 }
                 else{
-                    echo "<script>alert('fel användarnamn eller lösenord');</script>";
+                    echo "<script>alert('Wrong username or password');</script>";
                 }
             }
         }

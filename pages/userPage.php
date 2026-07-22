@@ -6,7 +6,7 @@
             <?php echo $_SESSION["username"] ?>
         </h2>
         <p>
-            Namn: <?php echo $_SESSION["name"]; ?>
+            Name: <?php echo $_SESSION["name"]; ?>
         </p>
         <p>
             Email: <?php echo $_SESSION["email"]; ?>
@@ -14,7 +14,7 @@
 
     </section>    
     <section class="w-4/5 flex flex-col">
-        <h3 class="text-3xl italic border-b-1 w-4/5 ml-5 md:full">Dina annonser</h3>
+        <h3 class="text-3xl italic border-b-1 w-4/5 ml-5 md:full">Your listings</h3>
 
         <div class="grid grid-cols-1 md:gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 self-center mt-5">
             

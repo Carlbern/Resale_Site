@@ -17,8 +17,8 @@ include "db.php";
                 <div class="m-2 text-sm text-gray-900 flex flex-col gap-1">
                     <p class="title truncate">' . $title . '</p>
                     <p class="price">' . $price . ':-</p>
-                    <p class="endDate">Går ut: ' . $endDate . '</p>
-                    <a class="self-center hover:underline text-blue-800" href="/projekt/pages/post.php?postId=' . $id . '">Läs mer</a>
+                    <p class="endDate">Expires: ' . $endDate . '</p>
+                    <a class="self-center hover:underline text-blue-800" href="/projekt/pages/post.php?postId=' . $id . '">More</a>
                 </div>
         </article>
         
@@ -61,14 +61,14 @@ include "db.php";
                     <p class="price">' . $price . ':-</p>
                     ';
                     if(date("Y-m-d") < $endDate){
-                        echo "<p class='text-black'>Går ut: " . $endDate . "</p>";
+                        echo "<p class='text-black'>Expires: " . $endDate . "</p>";
                     }
                     else{
-                        echo "<p class='text-red-500'>Går ut: " . $endDate . "</p>";
+                        echo "<p class='text-red-500'>Expires: " . $endDate . "</p>";
                     }
     
                     echo '
-                    <a class="self-center hover:underline text-blue-800" href="/projekt/pages/post.php?postId=' . $id . '">Läs mer</a>
+                    <a class="self-center hover:underline text-blue-800" href="/projekt/pages/post.php?postId=' . $id . '">More</a>
                 </div>
             </article>
         ';
@@ -111,14 +111,14 @@ include "db.php";
                     <p class="price">' . $price . ':-</p>
                     ';
                     if(date("Y-m-d") < $endDate){
-                        echo "<p class='text-black'>Går ut: " . $endDate . "</p>";
+                        echo "<p class='text-black'>Expires: " . $endDate . "</p>";
                     }
                     else{
-                        echo "<p class='text-red-500'>Går ut: " . $endDate . "</p>";
+                        echo "<p class='text-red-500'>Expires: " . $endDate . "</p>";
                     }
     
                     echo '
-                    <a class="self-center hover:underline text-blue-800" href="/projekt/pages/post.php?postId=' . $id . '">Läs mer</a>
+                    <a class="self-center hover:underline text-blue-800" href="/projekt/pages/post.php?postId=' . $id . '">More</a>
                 </div>
             </article>
         

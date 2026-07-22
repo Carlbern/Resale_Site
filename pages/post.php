@@ -43,19 +43,19 @@ echo "
                 <p>$descr</p>
                 <p>$price :-</p>
                 <div class='border-1 w-75'>
-                <p>Postat datum: $startDate</p>
+                <p>Posted: $startDate</p>
                 ";
                 //Post has expired
                 if(date("Y-m-d") > $endDate){
-                    echo "<p class='text-red-500'>Går ut: $endDate</p>";
+                    echo "<p class='text-red-500'>Expires: $endDate</p>";
                 }
                 else{
-                    echo "<p>Går ut: $endDate</p>";
+                    echo "<p>Expires: $endDate</p>";
                 }
                 
                 echo
                 "
-                <p>Postad av: $ownerName </p>  
+                <p>Posted by: $ownerName </p>  
                 </div>
             </section>
         </main>

@@ -6,34 +6,34 @@ echo '
         <main class="main">
 
         <form class="border-1 flex flex-col w-75 p-5 gap-1 m-5" action="" method="POST" enctype="multipart/form-data">
-        <h3 class="text-2xl border-b-1 italic">Ändra annons</h3>
-        <label for="title">Titel: </label>
+        <h3 class="text-2xl border-b-1 italic">Edit listing</h3>
+        <label for="title">Title: </label>
         <input class="bg-white border-1" type="text" name="title" id="title" maxlength="30">
         <br>
 
-        <label for="title">Beskrivning: </label>
+        <label for="title">Description: </label>
         <textarea class="bg-white border-1" name="descr" id="descr" rows="6"></textarea>
         <br>
 
-        <label for="title">Pris: </label>
+        <label for="title">Price: </label>
         <input class="bg-white border-1" type="number" name="price" id="price" >
         <br>
 
-        <label for="title">Slutdatum för annons: </label>
+        <label for="title">Expiration date for listing: </label>
         <input class="bg-white border-1" type="date" name="endDate" id="endDate">
         <br>
 
-        <label for="title">Bild: </label>
+        <label for="title">Image: </label>
         <input class="bg-gray-400 border-2" type="file" name="image">
         <br>
 
-        <input class="border-1 bg-gray-300 cursor-pointer hover:bg-gray-100" type="submit" name="submit" value="Uppdatera annons">
+        <input class="border-1 bg-gray-300 cursor-pointer hover:bg-gray-100" type="submit" name="submit" value="Update listing">
         </form>
 
         <form class="flex flex-col w-75 gap-1" action="" method="POST">
-            <label for="confirm">Skriv "TABORT" för att confirmera</label>
+            <label for="confirm">Enter "DELETE" to permanently delete</label>
             <input class="bg-white border-1" type="text" name="confirm">
-            <input class="border-1 bg-red-700 cursor-pointer hover:bg-red-500" type="submit" name="delete" value="TA BORT ANNONS">
+            <input class="border-1 bg-red-700 cursor-pointer hover:bg-red-500" type="submit" name="delete" value="DELETE LISTING">
         </form>
 ';
 
@@ -102,7 +102,7 @@ if(isset($_POST["submit"])){
     }
 }
 if(isset($_POST["delete"])){
-    if($_POST["confirm"] == "TABORT"){
+    if($_POST["confirm"] == "DELETE"){
         $postId = htmlspecialchars($_GET["postId"]);
         $ownerId = $_SESSION["id"];
 

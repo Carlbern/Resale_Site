@@ -44,8 +44,8 @@ $maxImageSize = 4 * 1024 * 1024;
     mysqli_stmt_bind_param($stmt,"sss",$imageName,$postId,$imageData);
     mysqli_stmt_execute($stmt);
 
-    echo "<main class='main'>Annons skapad! <br>
-        <a class='link text-center text-blue-800' href='../index.php'>Hem</a>
+    echo "<main class='main'>Listing created! <br>
+        <a class='link text-center text-blue-800' href='../index.php'>Home</a>
           </main  ";
 
     }

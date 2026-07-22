@@ -3,29 +3,29 @@
 <main class="main">
 
     <form class="border-1 flex flex-col w-75 p-5 gap-1 m-5" action="" method="POST">
-        <h3 class="text-2xl border-b-1 italic">Skapa konto</h3>
+        <h3 class="text-2xl border-b-1 italic">Create account</h3>
 
-        <label for="name">Namn:</label>
+        <label for="name">Name:</label>
         <input class="bg-white border-1" type="text" name="name" id="name">
         <br>
 
-        <label for="username">Användarnamn:</label>
+        <label for="username">Username:</label>
         <input class="bg-white border-1" type="text" name="username" id="username">
         <br>
 
-        <label for="name">Email-adress:</label>
+        <label for="name">Email-address:</label>
         <input class="bg-white border-1" type="email" name="email" id="email">
         <br>
 
-        <label for="name">Lösenord:</label>
+        <label for="name">Password:</label>
         <input class="bg-white border-1" type="password" name="pwd" id="pwd">
         <br>
 
-        <label for="name">Upprepa lösenord:</label>
+        <label for="name">Repeat password:</label>
         <input class="bg-white border-1" type="password" name="pwd2" id="pwd2">
         <br>
 
-        <input class="border-1 bg-gray-300" type="submit" value="Skapa konto">
+        <input class="border-1 bg-gray-300" type="submit" value="Create account">
     </form>
 
 <?php 

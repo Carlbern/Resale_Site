@@ -8,9 +8,9 @@ echo '<main class="main">';
    
 
     if(!isset($_SESSION["loggedIn"])){
-            echo '<p>Loggade ut</p>';
+            echo '<p>Logged out</p>';
     }
-            echo '<a class="text-blue-800 hover:underline cursor:pointer" href="../index.php">Gå hem</a>';
+            echo '<a class="text-blue-800 hover:underline cursor:pointer" href="../index.php">Go home</a>';
 echo '</main>';
 
 include "footer.php" ?>
