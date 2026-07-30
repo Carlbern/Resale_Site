@@ -36,7 +36,7 @@ while($row = mysqli_fetch_assoc($result)){
 
         echo '
         <article class="post">
-                <img class="w-1/1 h-2/3" src="./scripts/fetchImage.php?id=' . $id . '">
+                <img class="w-1/1 h-2/3" src="../scripts/fetchImage.php?id=' . $id . '">
                 <div class="m-2 text-sm text-gray-900 flex flex-col gap-1">
                     <p class="title truncate">' . $title . '</p>
                     <p class="price">' . $price . ':-</p>
