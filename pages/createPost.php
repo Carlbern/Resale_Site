@@ -36,7 +36,7 @@ else{
     echo '
     <main class="main">
         <p>You have to be signed in to create a listing</p>
-        <a class="link text-center text-blue-800" href="/projekt/pages/loginPage.php">Sign in</a>
+        <a class="link text-center text-blue-800" href="./pages/loginPage.php">Sign in</a>
     </main>
     ';
 

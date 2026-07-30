@@ -13,12 +13,12 @@ include "db.php";
         if(date("Y-m-d") < $endDate){
         echo '
         <article class="post">
-                <img class="w-1/1 h-2/3" src="/projekt/scripts/fetchImage.php?id=' . $id . '">
+                <img class="w-1/1 h-2/3" src="./scripts/fetchImage.php?id=' . $id . '">
                 <div class="m-2 text-sm text-gray-900 flex flex-col gap-1">
                     <p class="title truncate">' . $title . '</p>
                     <p class="price">' . $price . ':-</p>
                     <p class="endDate">Expires: ' . $endDate . '</p>
-                    <a class="self-center hover:underline text-blue-800" href="/projekt/pages/post.php?postId=' . $id . '">More</a>
+                    <a class="self-center hover:underline text-blue-800" href="./pages/post.php?postId=' . $id . '">More</a>
                 </div>
         </article>
         
@@ -55,7 +55,7 @@ include "db.php";
 
         echo '
         <article class="post relative ">                
-                <img class=" w-1/1 h-2/3" src="/projekt/scripts/fetchImage.php?id=' . $id . '" alt="No image for produkt">
+                <img class=" w-1/1 h-2/3" src="./scripts/fetchImage.php?id=' . $id . '" alt="No image for produkt">
                  <div class="m-2 text-sm text-gray-900 flex flex-col gap-1">
                     <p class="title truncate">' . $title . '</p>
                     <p class="price">' . $price . ':-</p>
@@ -68,7 +68,7 @@ include "db.php";
                     }
     
                     echo '
-                    <a class="self-center hover:underline text-blue-800" href="/projekt/pages/post.php?postId=' . $id . '">More</a>
+                    <a class="self-center hover:underline text-blue-800" href="./pages/post.php?postId=' . $id . '">More</a>
                 </div>
             </article>
         ';
@@ -105,7 +105,7 @@ include "db.php";
         echo '
         <article class="post relative ">
                 <a href="editPost.php?postId=' . $id . '"><i class="fa-solid fa-pen-to-square absolute text-lg text-orange-800 -top-2 -left-2 "></i></a>
-                <img class=" w-1/1 h-2/3" src="/projekt/scripts/fetchImage.php?id=' . $id . '">
+                <img class=" w-1/1 h-2/3" src="./scripts/fetchImage.php?id=' . $id . '">
                  <div class="m-2 text-sm text-gray-900 flex flex-col gap-1">
                     <p class="title truncate">' . $title . '</p>
                     <p class="price">' . $price . ':-</p>
@@ -118,7 +118,7 @@ include "db.php";
                     }
     
                     echo '
-                    <a class="self-center hover:underline text-blue-800" href="/projekt/pages/post.php?postId=' . $id . '">More</a>
+                    <a class="self-center hover:underline text-blue-800" href="./pages/post.php?postId=' . $id . '">More</a>
                 </div>
             </article>
         
